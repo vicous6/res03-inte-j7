@@ -1,0 +1,14 @@
+section{
+    
+    height:630px;
+    width:1200px;
+    background-image:url("starwars.jpg");
+    background-attachement: fixed;
+    overflow:scroll;
+}
+
+section p{
+    
+    color:yellow;
+    font-size:40px;
+}
