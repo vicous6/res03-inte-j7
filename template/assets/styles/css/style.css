@@ -54,8 +54,62 @@ body {
 }
 
 header {
-  height: 50vh;
-  background-image: url("inner-pagebg.jpg");
+  height: 65vh;
+  background: linear-gradient(135deg, rgba(52, 82, 255, 0.8) 0%, rgba(255, 16, 83, 0.8) 100%), url("../img/inner-pagebg.jpg");
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+header > nav {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  border-bottom: 0.1px solid rgba(211, 211, 211, 0.5);
+  color: white;
+  font-size: 25px;
+}
+header > nav > ul:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-self: center;
+  justify-self: center;
+  height: 80%;
+  width: 90%;
+}
+header > nav > ul:nth-of-type(1) > li {
+  align-self: center;
+  padding-left: 10px;
+}
+header > nav > ul:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-self: center;
+  justify-self: center;
+  height: 80%;
+  width: 90%;
+}
+header > nav > ul:nth-of-type(2) > li {
+  height: 90%;
+  width: 90%;
+  display: flex;
+}
+header > nav > ul:nth-of-type(2) > li > img {
+  width: 100%;
+}
+header > section {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header > section > h1 {
+  font-size: 40px;
+  padding-bottom: 16px;
+}
+header > section > ul {
+  display: flex;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
